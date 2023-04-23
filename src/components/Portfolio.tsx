@@ -63,10 +63,10 @@ const Portfolio = (props: Props) => {
                         fontWeight="bold"
                         sx={{
                           transition: 'all 0.3s ease',
-                          '&:hover': { color: '#ffd700' },
+                          '&:hover': project.url && { color: '#ffd700' },
                         }}
                       >
-                        {project.name} <FaLink size={16} />
+                        {project.name} {project.url && <FaLink size={16} />}
                       </Typography>
                     </a>
                     <a href={project.gitUrl} target="_blank">
@@ -81,9 +81,11 @@ const Portfolio = (props: Props) => {
                       </Typography>
                     </a>
                   </Stack>
-                  <Typography color="#fff" fontSize="12px" px={1}>
-                    {project?.description}
-                  </Typography>
+                  {project.description && (
+                    <Typography color="#fff" fontSize="12px" px={1}>
+                      {project?.description}
+                    </Typography>
+                  )}
                   <Stack direction="row" flexWrap="wrap" gap={0.5} pt={1}>
                     {project.dependencies.map((item, idx) => (
                       <Chip
