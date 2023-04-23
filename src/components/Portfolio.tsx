@@ -56,7 +56,7 @@ const Portfolio = (props: Props) => {
                     justifyContent="space-between"
                     alignItems="center"
                   >
-                    <a href={project.url}>
+                    <a href={project.url} target="_blank">
                       <Typography
                         color="#fff"
                         fontSize="20px"
@@ -69,7 +69,7 @@ const Portfolio = (props: Props) => {
                         {project.name} <FaLink size={16} />
                       </Typography>
                     </a>
-                    <a href={project.gitUrl}>
+                    <a href={project.gitUrl} target="_blank">
                       <Typography
                         color="#fff"
                         sx={{

@@ -50,6 +50,27 @@ export const skillsLogos = [
 
 export const projects = [
   {
+    name: 'T-Shirt E-Commerce Store',
+    image: '/images/projects/tshirt-store.jpg',
+    dependencies: [
+      'Next.js',
+      'React.js',
+      'Material UI',
+      'Redux-Toolkit',
+      'Next-Auth',
+      'JWT',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'AWS-SDK',
+      'Typescript',
+    ],
+    description:
+      'Developing a front-end & back-end for T-shirt Design & Print Store, Implementing Responsive UI, Wide State Management, Rest API Endpoints, Database, Authentication, Sending Emails.',
+    url: 'https://www.solo-godzilla.online',
+    gitUrl: 'https://github.com/Mo-Helmy/godzilla-shop',
+  },
+  {
     name: 'Twitter Clone',
     image: '/images/projects/twitter.jpg',
     dependencies: [
@@ -68,6 +89,37 @@ export const projects = [
       'Developing a starter front-end & back-end system for twitter, Implementing Responsive UI, Wide State Management, Rest API, Database, Authentication',
     url: 'https://twitter-clone-app-tau.vercel.app',
     gitUrl: 'https://github.com/Mo-Helmy/twitter-clone-app',
+  },
+  {
+    name: 'Image Processing Project',
+    image: '/images/projects/api.jpg',
+    dependencies: ['Node.js', 'Express.js', 'Jasmine', 'Typescript'],
+    gitUrl: 'https://github.com/Mo-Helmy/image-processing-project',
+  },
+  {
+    name: 'Store Backend',
+    image: '/images/projects/api.jpg',
+    dependencies: [
+      'Node.js',
+      'Express.js',
+      'Postgres',
+      'Jasmine',
+      'Typescript',
+    ],
+    gitUrl: 'https://github.com/Mo-Helmy/storefront-backend-project',
+  },
+  {
+    name: 'AWS Store Backend',
+    image: '/images/projects/api.jpg',
+    dependencies: [
+      'Node.js',
+      'Express.js',
+      'Postgres',
+      'Jasmine',
+      'AWS',
+      'Typescript',
+    ],
+    gitUrl: 'https://github.com/Mo-Helmy/aws-store-backend',
   },
   {
     name: 'Youtube Clone',

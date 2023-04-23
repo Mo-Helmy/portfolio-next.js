@@ -11,6 +11,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import NavLink from './NavLink';
+import PhoneIcon from '../Contact/PhoneIcon';
 
 type Props = {};
 
@@ -71,7 +72,7 @@ const Sidebar = (props: Props) => {
               '& svg': { color: '#4d4d4e' },
             }}
           >
-            <FaGithub size={22} style={{ marginTop: '8px' }} />
+            <FaGithub size={22} style={{ marginBottom: '8px' }} />
           </Box>
         </a>
         <a
@@ -85,7 +86,7 @@ const Sidebar = (props: Props) => {
               '& svg': { color: '#4d4d4e' },
             }}
           >
-            <FaLinkedin size={22} style={{ marginTop: '8px' }} />
+            <FaLinkedin size={22} style={{ marginBottom: '8px' }} />
           </Box>
         </a>
         <a href="mailto:mo.helmy.dev@gmail.com">
@@ -95,9 +96,10 @@ const Sidebar = (props: Props) => {
               '& svg': { color: '#4d4d4e' },
             }}
           >
-            <FaEnvelope size={22} style={{ marginTop: '8px' }} />
+            <FaEnvelope size={22} style={{ marginBottom: '8px' }} />
           </Box>
         </a>
+        <PhoneIcon width={22} fontSize={11} />
       </Box>
     </AppBar>
   );

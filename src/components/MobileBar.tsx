@@ -12,6 +12,7 @@ import {
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import PhoneIcon from './Contact/PhoneIcon';
 
 type Props = {};
 
@@ -193,6 +194,7 @@ const MobileBar = (props: Props) => {
               <FaEnvelope size={24} style={{ marginTop: '8px' }} />
             </Box>
           </a>
+          <PhoneIcon width={24} />
         </Stack>
       </Drawer>
     </>

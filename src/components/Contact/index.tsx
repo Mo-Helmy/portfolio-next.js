@@ -1,17 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from 'react';
-import { Box, Button, Stack, Typography } from '@mui/material';
-import { FaEnvelope, FaGithub, FaLinkedin, FaPhone } from 'react-icons/fa';
+import { Box, Stack, Typography } from '@mui/material';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 import Loader from 'react-loaders';
 
 import Form from './Form';
 import Layout from '../Layout';
 import Title from '../Title/Title';
+import PhoneIcon from './PhoneIcon';
 
 type Props = {};
 
 const Contact = (props: Props) => {
-  const [showPhone, setShowPhone] = useState(false);
   return (
     <>
       <Layout>
@@ -92,23 +91,7 @@ const Contact = (props: Props) => {
                   <FaEnvelope size={34} />
                 </Box>
               </a>
-              <Button
-                sx={{
-                  minWidth: '34px',
-                  padding: 0,
-                  opacity: 0,
-                  animation: 'bounceIn 1s 1.9s forwards',
-                  '&:hover svg': { color: '#ffd700' },
-                  '& svg': { color: '#fff' },
-                }}
-                onClick={() => setShowPhone((prev) => !prev)}
-              >
-                {showPhone ? (
-                  <Typography color="#ffd700">+201066297501</Typography>
-                ) : (
-                  <FaPhone size={30} />
-                )}
-              </Button>
+              <PhoneIcon width={30} showAnimation color="#fff" />
             </Stack>
           </Stack>
           <Box flex={1}>
