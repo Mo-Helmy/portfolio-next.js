@@ -144,6 +144,19 @@ export const projects = [
     gitUrl: 'https://github.com/Mo-Helmy/Dall-E-app',
   },
   {
+    name: 'AI Article Summarizer',
+    image: '/images/projects/ai-article-summarizer.jpg',
+    dependencies: [
+      'Vite',
+      'React',
+      'TailwindCSS',
+      'Redux-Toolkit',
+      'Typescript',
+    ],
+    url: 'https://ai-article-summarizer-app.netlify.app/',
+    gitUrl: 'https://github.com/Mo-Helmy/ai-article-summarizer',
+  },
+  {
     name: 'Fitness App',
     image: '/images/projects/fitness-app.jpg',
     dependencies: [
